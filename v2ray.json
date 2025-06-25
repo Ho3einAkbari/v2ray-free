@@ -1,0 +1,38 @@
+{
+  "inbounds": [],
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "151.101.3.8",
+            "port": 80,
+            "users": [
+              {
+                "id": "263535f3-e631-442f-b25f-1f3f1db2b8e7",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "type": VLESS,
+            "request": {
+              "path": ["/v2rayfree1vpn"],
+              "headers": {
+                "Host": ["https://t.co/JgsWortqab"]
+              }
+            }
+          }
+        }
+      },
+      "tag": "vpnbaz"
+    }
+  ]
+}
